@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+User.create([
+    { name: 'Todd Denner', email: 'todd.denner@email.com', password: 'nameistodd'},
+    { name: 'Dan Kudo', email: 'dan.kudo@email.com', password: 'nameisdan'},
+])
+
+DrinkTotal.create([
+    { goal: 32, actual_total: 32, goal_reached: true, user_id: 1},
+    { goal: 40, actual_total: 34, goal_reached: false, user_id: 2},
+])
